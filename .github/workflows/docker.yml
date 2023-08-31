@@ -21,7 +21,7 @@ jobs:
       uses: docker/metadata-action@v4
       with:
         images: |
-          docuseal/docuseal
+          gares92/docuseal
         tags: |
           type=semver,pattern={{version}}
     - name: Set up QEMU

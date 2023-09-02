@@ -1,2 +1,2 @@
-web: PORT=8000 bundle exec rails s -p 8000
+web: PORT=3000 bundle exec rails s -p 3000
 webpacker: bundle exec ./bin/shakapacker-dev-server

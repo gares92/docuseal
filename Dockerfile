@@ -54,5 +54,5 @@ RUN bundle exec bootsnap precompile --gemfile app/ lib/
 WORKDIR /data/docuseal
 ENV WORKDIR=/data/docuseal
 
-EXPOSE 8000
+EXPOSE 3000
 CMD ["/app/bin/rails", "server"]

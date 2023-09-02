@@ -7,7 +7,7 @@ services:
         condition: service_healthy
     image: docuseal/docuseal:latest
     ports:
-      - 8000:8000
+      - 3000:3000
     volumes:
       - .:/data
     environment:
@@ -30,7 +30,7 @@ services:
 
   caddy:
     image: caddy:latest
-    command: caddy reverse-proxy --from $HOST --to app:8000
+    command: caddy reverse-proxy --from $HOST --to app:3000
     ports:
       - 80:80
       - 443:443
